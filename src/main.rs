@@ -23,7 +23,7 @@ fn setup(
             Vec2::new(-100.0, -100.0), // Bottom left vertex
             Vec2::new(100.0, -100.0),  // Bottom right vertex
         ))),
-        MeshMaterial2d(materials.add(Color::srgb(1.0, 0.2, 0.2))), // Updated to explicit srgb
+        MeshMaterial2d(materials.add(Color::srgb(1.0, 1.2, 0.2))), // Updated to explicit srgb
         Transform::from_translation(Vec3::ZERO), // Optional: explicitly set position
     ));
 }
