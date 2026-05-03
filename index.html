@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevy WASM Project</title>
+    <style>
+        body { margin: 0; padding: 0; background-color: #2b2b2b; }
+        /* Bevy will automatically inject a canvas element here */
+    </style>
+</head>
+<body>
+    <script type="module">
+        // Import the initialization function from the generated binding file
+        import init from './bevy-wasm-test.js';
+        
+        // Execute the WebAssembly module
+        init().catch((error) => {
+            console.error("Initialization failed:", error);
+        });
+    </script>
+</body>
+</html>
